@@ -7,18 +7,12 @@
     <title>Replicating the Google Homepage</title>
     <!--STYLESHEETS-->
     <link href="https://cdn.pixabay.com/photo/2015/10/31/12/56/google-1015752_960_720.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--INLINE STYLE-->
-    <style>
-        body{
-            margin:0;
-        }
-
-        .green-square{
-            background-color:green;
-            width:100px;height:100px;}
-
-        .text-link{
+    <style>.text-link{
             text-decoration:none;
             font-family:Arial, Helvetica, sans-serif;
             font-size:13px;
@@ -32,10 +26,16 @@
 
         .icon-link{
             color:dimgray;
+            text-decoration:none;
         }
         
         .icon-link:hover{
             color:#222;
+        }
+
+        #header{
+            width:100%;
+            padding:15px;
         }
 
         #header-left{
@@ -44,6 +44,20 @@
 
         #header-right{
             float:right;
+        }
+
+        #header-left a, #header-right a{
+            padding:15px;
+        }
+
+        #search-container{
+            text-align:center;
+        }
+
+        #google-logo{
+            position:relative;
+            left:70px;
+            padding:30px;
         }
 
         #footer{
@@ -59,11 +73,17 @@
 
         #footer-right{
             float:right;
+            position:relative;
+            right:35px;
+        }
+
+        #footer-left a, #footer-right a{
+            padding:15px 15px 35px 15px;
         }
     </style>
 </head>
 <body>
-    <div class="green-square"></div>
+    
     <div id="header">
         <div id="header-left">
             <a class="text-link" href="#">About</a>
@@ -75,11 +95,21 @@
             <a class="icon-link" href="#">
                 <i class="material-icons dp48">apps</i>
             </a>
+            <a class="icon-link" href="#">
+                <i class="material-icons dp48">add_alert</i>
+            </a>
+            <a href="#">
+
+            </a>
         </div>
     </div>
     <div id="search-container">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" />
-        <form></form>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" id="google-logo" />
+        <form id="search-form">
+            <input type="search" class="search-bar" />
+            <input type="submit" value="Google Search" class="search-btn" />
+            <input type="submit" value="I'm Feeling Lucky" class="search-btn" />
+        </form>
     </div>
     <div id="footer">
         <div id="footer-left">
@@ -90,7 +120,7 @@
             <a class="text-link" href="#">Privacy</a>
             <a class="text-link" href="#">Terms</a>
             <a class="text-link" href="#">Settings</a>
-        </div>
+        </div><br />
     </div>
 </body>
 </html>
