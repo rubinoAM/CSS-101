@@ -19,6 +19,10 @@
     color:#222;
 }
 
+a:last-child i.dp48{
+    font-size:40px;
+}
+
 #header{
     width:100%;
     padding:15px;
@@ -38,6 +42,17 @@
 
 #search-container{
     text-align:center;
+    margin:210px auto;
+}
+
+.search-btn{
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    font-size:13px;
+    font-weight:bold;
+    padding:16px;
 }
 
 #google-logo{
