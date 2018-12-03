@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>A CSS Car: By Michael Rubino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body{margin:0;
+        }
+        #drawing{
+            height:500px;
+            overflow:hidden;
+            background-color:skyblue;
+            background-image:url("https://opendoorlegal.org/wp-content/uploads/2015/05/wood-textures-crumpled-paper-texture-free-710956-2.jpg");
+            background-blend-mode:multiply;
+            background-size:cover;
+        }
+        #car{
+            position:relative;
+            bottom:600px;
+            left:200px;
+        }
+        .hubcap{
+            position:relative;
+            z-index:4;
+            width:20px;
+            height:20px;
+            background-color:#666;
+            border-radius:50%;
+        }
+        #left-hubcap{
+            top:480px;
+            left:40px;
+        }
+        #right-hubcap{
+            top:460px;
+            left:250px;
+        }
+        .wheel{
+            position:relative;
+            z-index:3;
+            width:30px;
+            height:30px;
+            background-color:#333;
+            border:5px solid white;
+            border-radius:50%;
+            box-shadow: 5px 5px 8px #555;
+        }
+        #left-wheel{
+            top:430px;
+            left:30px;
+        }
+        #right-wheel{
+            top: 390px;
+            left:240px;
+        }
+        .door-handle{
+            position:relative;
+            z-index:3;
+            width:20px;
+            height:5px;
+            background-color:#333;
+            border-radius:3px;
+        }
+        #back-handle{
+            top:760px;
+            left:120px;
+        }
+        #front-handle{
+            top:755px;
+            left:200px;
+        }
+        .bumper{
+            position:relative;
+            z-index:3;
+            width:30px;
+            height:25px;
+            background-color:#666;
+            background-image:url("https://image.freepik.com/fotos-gratis/vista-do-papel-amarrotado-branco_1194-7544.jpg");
+            background-blend-mode:multiply;
+            background-size:cover;
+            border:5px solid white;
+            border-radius:20px 20px 0 0;
+            box-shadow: 5px 5px 8px #555;
+        }
+        #back-bumper{
+            border-radius:10px 0 0 10px;
+            top:885px;
+            right:20px;
+        }
+        #front-bumper{
+            border-radius:0 10px 10px 0;
+            top:850px;
+            left:290px;
+        }
+        #top-frame{
+            position:relative;
+            z-index:2;
+            top:275px;
+            width:300px;
+            height:85px;
+            background-color:cornflowerblue;
+            background-image:url("https://image.freepik.com/fotos-gratis/vista-do-papel-amarrotado-branco_1194-7544.jpg");
+            background-blend-mode:multiply;
+            background-size:cover;
+            border:5px solid white;
+            border-radius:20px 20px 0 0;
+            box-shadow: 5px 5px 8px #555;
+        }
+        #head-light{
+            position: relative;
+            top:870px;
+            left:295px;
+            z-index:1;
+            width:20px;
+            height:30px;
+            background-color:rgb(244,240,10);
+            border:5px solid white;
+            border-radius:0 15px 15px 0;
+            box-shadow: 5px 5px 8px #555;
+        }
+        #tail-light{
+            position: relative;
+            top:905px;
+            right:15px;
+            z-index:1;
+            width:20px;
+            height:25px;
+            background-color:rgb(233, 69, 29);
+            border:5px solid white;
+            border-radius:15px 0 0 15px;
+            box-shadow: 5px 5px 8px #555;
+        }
+        .window{
+            position: relative;
+            z-index:1;
+            width:60px;
+            height:160px;
+            background-color:aqua;
+            background-image:url("https://image.freepik.com/fotos-gratis/vista-do-papel-amarrotado-branco_1194-7544.jpg");
+            background-blend-mode:multiply;
+            background-size:cover;
+            border:5px solid white;
+            border-radius:10px 10px 0 0;
+            box-shadow: 5px 5px 8px #555;
+        }
+        #left-window{
+            top:580px;
+            left:80px;
+        }
+        #right-window{
+            top:410px;
+            left:160px;
+        }
+        #btm-frame{
+            z-index:0;
+            position:relative;
+            left:60px;
+            width:180px;
+            height:250px;
+            background-color:cornflowerblue;
+            background-image:url("https://image.freepik.com/fotos-gratis/vista-do-papel-amarrotado-branco_1194-7544.jpg");
+            background-blend-mode:multiply;
+            background-size:cover;
+            border:5px solid white;
+            border-radius:30px 30px 0 0;
+            box-shadow: 5px 5px 8px #555;
+        }
+        #pacman {
+            z-index:4;
+            width: 0px;
+            height: 0px;
+            border-right: 60px solid yellow;
+            border-top: 60px solid yellow;
+            border-left: 60px solid transparent;
+            border-bottom: 60px solid yellow;
+            border-radius:60px;
+            position:relative;
+            bottom:1130px;
+            left:900px;
+        }
+        #pac-eye{
+            z-index:5;
+            background-color:#111;
+            height:30px;
+            width:12px;
+            border-radius:20px;
+            position:relative;
+            bottom:1220px;
+            left:970px;
+        }
+        #road{
+            background-color:#333;
+            width:100%;
+            height:20px;
+            position:relative;
+            bottom:570px;
+        }
+        #grass{
+            background-color:forestgreen;
+            background-image:url("https://previews.123rf.com/images/allika/allika1304/allika130400050/19299941-close-up-texture-of-yarn-gray-background.jpg");
+            background-blend-mode: multiply;
+            background-size:cover;
+            width: 100%;
+            height: 100px;
+            position: relative;
+            bottom: 570px;
+        }
+        #cloud-piece-1{
+            position:relative;
+            background-color:white;
+            height:70px;
+            width:450px;
+            border-radius:30px 30px 45px 45px;
+            bottom:950px;
+            left:900px;
+        }
+        #cloud-piece-2{
+            position:relative;
+            background-color:white;
+            height:70px;
+            width:230px;
+            border-radius:70px 70px 0 0;
+            bottom:1080px;
+            left:930px;
+        }
+        #cloud-piece-3{
+            position:relative;
+            background-color:white;
+            height:70px;
+            width:230px;
+            border-radius:40px 40px 0 0;
+            bottom:1120px;
+            left:1030px;
+        }
+        .sun{
+            background-color:yellow;
+            height:120px;
+            width:120px;
+            border-radius:50%;
+            position:relative;
+            bottom:1280px;
+            left:45px;
+            box-shadow:yellow 0 0 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="drawing">
+        <div id="car">
+            <div id="tail-light"></div>
+            <div id="head-light"></div>
+            <div id="back-bumper" class="bumper"></div>
+            <div id="front-bumper" class="bumper"></div>
+            <div id="back-handle" class="door-handle"></div>
+            <div id="front-handle" class="door-handle"></div>
+            <div id="left-window" class="window"></div>
+            <div id="right-window" class="window"></div>
+            <div id="left-hubcap" class="hubcap"></div>
+            <div id="right-hubcap" class="hubcap"></div>
+            <div id="left-wheel" class="wheel"></div>
+            <div id="right-wheel" class="wheel"></div>
+            <div id="top-frame"></div>
+            <div id="btm-frame"></div>
+        </div>
+        <div id="road"></div>
+        <div id="grass"></div>
+        <div class="cloud">
+            <div id="cloud-piece-1"></div>
+            <div id="cloud-piece-2"></div>
+            <div id="cloud-piece-3"></div>
+        </div>
+        <div class="sun"></div>
+        <div id="pacman"></div>
+        <div id="pac-eye"></div>
+    </div>
+</body>
+</html>
