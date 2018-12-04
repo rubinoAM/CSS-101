@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let's Recreate Twitter :-)</title>
+    <link href="images/tw_logo.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet">
+    <style>
+        .navbar{
+            max-width:960px;
+            height:40px;
+            margin:0 auto;
+        }
+
+        .nav-left, .nav-center, .nav-right{
+            display: inline-block;}
+
+        .nav-left a{
+            text-decoration:none;
+            color:#666;
+            font-size:10pt;
+            font-family:Arial,Helvetica,sans-serif;
+            font-weight: bold;
+            padding:10px;}
+
+        .nav-left a:hover{
+            color:#1EA1F2;
+            border-bottom:#1EA1F2 3px solid;}
+
+        .nav-center img{
+            margin:0 140px;
+            width:25px; height:25px;}
+        
+        .nav-right{float:right;}
+
+        .nav-right button{
+            background-color:#1EA1F2;
+            color:white;
+            border:none;
+            border-radius:5px;
+        }
+
+        .banner img{width:100%;}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <a class="home" href="#">Home</a>
+            <a class="moments" href="#">Moments</a>
+            <a class="notifications" href="#">Notifications</a>
+            <a class="messages" href="#">Messages</a>
+        </div>
+        <div class="nav-center">
+            <img src="images/tw_logo.png" alt="Twitter®"/>
+        </div>
+        <div class="nav-right">
+            <input />
+            <img class="small-profile-pic" src=""/>
+            <button>Tweet</button>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="https://via.placeholder.com/1500x500" alt="Banner Image">
+    </div>
+    <div class="stats">
+        <div class="profile-image"></div>
+        <div class="follow-numbers"></div>
+        <div class="follow"></div>
+    </div>
+    <div class="main">
+        <div class="bio"></div>
+        <div class="tweets"></div>
+        <div class="suggestions"></div>
+    </div>
+</body>
+</html>

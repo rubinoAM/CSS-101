@@ -32,14 +32,12 @@ a:last-child i.dp48{
 }
 
 #header-left{
-    display:inline-block;
     position:absolute;
     top:20px;
 }
 
 #header-right{
     float:right;
-    display:inline-block;
     position:relative;
     bottom:20px;
 }
@@ -67,6 +65,12 @@ a:last-child i.dp48{
     border:1px lightgray solid;
     border-radius:2px;
     padding:5px 0;
+    box-shadow:0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+#search-bar:hover{
+
+    box-shadow:0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
 }
 
 .search-input{
@@ -83,6 +87,10 @@ a:last-child i.dp48{
     font-size:25px;
 }
 
+#search-btns{
+    padding-top:15px;
+}
+
 .search-btn{
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
@@ -92,6 +100,11 @@ a:last-child i.dp48{
     font-weight:bold;
     padding:10px 14px;
     margin:25px 5px;
+}
+
+#search-bar i{
+    position:relative;
+    left:15%;
 }
 
 #google-logo{
