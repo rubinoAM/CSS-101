@@ -1,0 +1,144 @@
+body{
+    font-family:"Segoe UI","Tahoma","Lucida Grande","Helvetica Neue","Roboto",sans-serif;}
+
+.nav-bar{
+    background-color:#4267b2;
+    width:100%;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.fb-logo{
+    margin-left:10px;}
+
+.fb-logo a{
+    color:white;
+    font-weight:bold;
+    font-size:25pt;
+    text-decoration: none;
+}
+
+.nav-icon-slash-search{
+    display:inline-flex;
+    width:400px;
+    margin:0 200px 0 0;
+}
+
+.nav-icons{
+    margin:0 5%;
+    display:flex;
+    align-items:center;
+}
+
+.nav-icons li, .nav-home .glyphicon{
+    color:white;
+    display:inline-flex;
+    margin-right:10px;
+}
+
+.nav-icons li:hover, .nav-home .glyphicon:hover{
+    color:#dce4f3;}
+
+.nav-icons li.glyphicon, .nav-home .glyphicon{
+    font-size:16pt;}
+
+.glyphicon-dot{
+    margin: 0 0 10px;}
+
+.glyphicon-dot:before{
+    content:"\25cf";
+    font-size:3em;
+}
+
+.nav-search{
+    background-color:white;
+    height:25px;
+    width:100%;
+    padding:0 5px;
+    align-self:center;
+    display:flex;
+    align-items:center;
+}
+
+.nav-search a{
+    color:black;}
+
+.search-input{
+    background-color:transparent;
+    border:none;
+    margin-left:10px;
+    width:95%;
+    font-size:9pt;
+}
+
+.glyphicon-search{
+    width:5%;
+    text-decoration:none;
+}
+
+.nav-user-slash-home{
+    display:inline-flex;
+    width:300px;
+}
+
+.nav-user{
+    display: flex;
+    align-items:center;
+    margin-right:20px;}
+
+.nav-user-pic img, .side-user-pic img{
+    border-radius:50%;}
+
+.nav-text{
+    color:white;
+    font-weight:bold;
+    font-size:11pt;
+    margin:0 0 0 10px;
+}
+
+.nav-home{
+    display:flex;
+    align-items:center;
+}
+
+.nav-home .nav-text{
+    margin-right:10px;
+}
+
+.body-container{
+    width:100%;
+    display:flex;
+}
+
+.side-bar{
+    width:20%;
+    padding-left:20px;
+    padding-bottom:50px;
+    border-right:1px solid lightgray;
+}
+
+.side-bar > div{
+    margin:20px 0;
+}
+
+.side-user{
+    display:inline-flex;
+    align-items: center;
+}
+
+.side-user-name{
+    margin-left:10px;
+    font-weight:bold;
+    color:#234794;
+}
+
+div[class*="side-"] > h4{
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#234794;
+}
+
+.side-link-title{
+    font-weight:bold;
+}
